@@ -1,0 +1,19 @@
+{
+  "total": 132,
+  "raw_trials": 396,
+  "expected_raw_trials": 396,
+  "ok": 132,
+  "oom": 0,
+  "unstable_oom": 0,
+  "recovered_after_oom": 0,
+  "short_power_windows": 0,
+  "short_warmups": 0,
+  "unstable_latency": 0,
+  "unstable_between_trials_latency": 0,
+  "unstable_between_trials_energy": 0,
+  "memory_peak_changed": 0,
+  "short_latency_windows": 0,
+  "few_distinct_power_readings": 0,
+  "energy_estimators_disagree": 0,
+  "kernel_profiles_missing": 0
+}

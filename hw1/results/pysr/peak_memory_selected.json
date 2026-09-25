@@ -1,0 +1,26 @@
+{
+  "target": "peak_memory_bytes",
+  "unit": "MiB",
+  "features": [
+    "image_size",
+    "batch_size"
+  ],
+  "feature_columns": [
+    "S",
+    "B"
+  ],
+  "equation": "image_size*(batch_size + image_size - (-0.028787112*batch_size*image_size + image_size))*0.0028312632",
+  "latex": "image_{size} \\left(batch_{size} + image_{size} - \\left(- 0.0288 batch_{size} image_{size} + image_{size}\\right)\\right) 0.00283",
+  "train_count": 63,
+  "validation_count": 69,
+  "train": {
+    "mae": 17.597234688656915,
+    "median_relative_error": 0.15224201905376383,
+    "invalid_predictions": 0
+  },
+  "validation": {
+    "mae": 37.87545253493486,
+    "median_relative_error": 0.08150326893914862,
+    "invalid_predictions": 0
+  }
+}

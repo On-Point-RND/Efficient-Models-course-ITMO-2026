@@ -1,0 +1,123 @@
+{
+  "gpu": "Tesla T4",
+  "total_points": 132,
+  "calibration_points": 63,
+  "validation_points": 69,
+  "status_counts": {
+    "ok": 132
+  },
+  "regime_counts": {
+    "compute": 115,
+    "launch": 17
+  },
+  "objective": "sum of squared log(predicted/observed latency) on clean base-grid points",
+  "latency_ms": {
+    "train": {
+      "n": 63,
+      "mae": 7.098669448057539,
+      "median_relative_error": 0.1772290857738408,
+      "p95_relative_error": 0.3143460433562806
+    },
+    "validation": {
+      "n": 69,
+      "mae": 20.93403234310588,
+      "median_relative_error": 0.1756064727462884,
+      "p95_relative_error": 0.35078910299185395
+    }
+  },
+  "peak_memory_mib": {
+    "train": {
+      "n": 63,
+      "mae": 181.91993374294705,
+      "median_relative_error": 0.4904894472947761,
+      "p95_relative_error": 0.808682688837466
+    },
+    "validation": {
+      "n": 69,
+      "mae": 435.10005762957144,
+      "median_relative_error": 0.46409970989403143,
+      "p95_relative_error": 0.7225306531527418
+    }
+  },
+  "energy_mj": {
+    "train": {
+      "n": 63,
+      "mae": 471.93061200457805,
+      "median_relative_error": 0.17052697744141315,
+      "p95_relative_error": 0.30404530324578943
+    },
+    "validation": {
+      "n": 69,
+      "mae": 1374.3331675235684,
+      "median_relative_error": 0.1661122424511112,
+      "p95_relative_error": 0.3551674291993454
+    }
+  },
+  "validation_groups": {
+    "unseen_size_only": {
+      "latency": {
+        "n": 36,
+        "mae": 11.364512541489063,
+        "median_relative_error": 0.15198009661595294,
+        "p95_relative_error": 0.29796282166235544
+      },
+      "memory": {
+        "n": 36,
+        "mae": 238.2160356309679,
+        "median_relative_error": 0.44674209619680505,
+        "p95_relative_error": 0.6731743179014735
+      },
+      "energy": {
+        "n": 36,
+        "mae": 736.3582978845484,
+        "median_relative_error": 0.14860877614796608,
+        "p95_relative_error": 0.290052775340356
+      }
+    },
+    "unseen_batch_only": {
+      "latency": {
+        "n": 21,
+        "mae": 25.47528205656496,
+        "median_relative_error": 0.2353474873976576,
+        "p95_relative_error": 0.5453216309424155
+      },
+      "memory": {
+        "n": 21,
+        "mae": 581.2491593133835,
+        "median_relative_error": 0.5010774577333702,
+        "p95_relative_error": 0.8264306410597754
+      },
+      "energy": {
+        "n": 21,
+        "mae": 1674.1680904718041,
+        "median_relative_error": 0.2357177567064458,
+        "p95_relative_error": 0.534258177938711
+      }
+    },
+    "both_unseen": {
+      "latency": {
+        "n": 12,
+        "mae": 41.69540474940295,
+        "median_relative_error": 0.2790215586757476,
+        "p95_relative_error": 0.3612544369198664
+      },
+      "memory": {
+        "n": 12,
+        "mae": 769.9911956787109,
+        "median_relative_error": 0.45932119336599,
+        "p95_relative_error": 0.5772789872182688
+      },
+      "energy": {
+        "n": 12,
+        "mae": 2763.5466612812165,
+        "median_relative_error": 0.28281640186073975,
+        "p95_relative_error": 0.3644382995749048
+      }
+    }
+  },
+  "memory_measured_to_ideal_ratio": {
+    "minimum": 1.3809001777177927,
+    "median": 1.9255592326916064,
+    "maximum": 5.840713473743034
+  }
+}

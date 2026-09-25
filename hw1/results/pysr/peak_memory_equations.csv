@@ -1,0 +1,9 @@
+complexity,loss,equation,score,sympy_format,lambda_format
+1,806006.5,image_size,0.0,image_size,PySRFunction(X=>image_size)
+3,565060.3,batch_size * 7.0474353,0.17757967793742993,batch_size*7.0474353,PySRFunction(X=>batch_size*7.0474353)
+5,112145.02,(batch_size * image_size) * 0.028787112,0.8085697979750325,batch_size*image_size*0.028787112,PySRFunction(X=>batch_size*image_size*0.028787112)
+7,87764.445,(image_size / 50.0653) * (batch_size + batch_size),0.12256819549117477,image_size*(batch_size + batch_size)/50.0653,PySRFunction(X=>image_size*(batch_size + batch_size)/50.0653)
+9,87635.82,(image_size / 50.0653) * (batch_size + (batch_size - 0.18538511)),0.000733322854766293,image_size*(batch_size + batch_size - 1*0.18538511)/50.0653,PySRFunction(X=>image_size*(batch_size + batch_size - 1*0.18538511)/50.0653)
+11,1760.9983,(batch_size / (-11766.279 / (image_size - (image_size * image_size)))) + 42.26305,1.95365447716021,batch_size/((-11766.279/(-image_size*image_size + image_size))) + 42.26305,PySRFunction(X=>batch_size/((-11766.279/(-image_size*image_size + image_size))) + 42.26305)
+13,1634.8282,((batch_size / (-11766.279 / (0.008853312 - (image_size * image_size)))) + 42.26305) + -1.2085161,0.03717157088865623,batch_size/((-11766.279/(0.008853312 - image_size*image_size))) - 1.2085161 + 42.26305,PySRFunction(X=>batch_size/((-11766.279/(0.008853312 - image_size*image_size))) - 1.2085161 + 42.26305)
+15,657.6138,(image_size * (batch_size + (image_size - (image_size - ((batch_size * image_size) * 0.028787112))))) * 0.0028312632,0.4553375862172988,image_size*(batch_size + image_size - (-0.028787112*batch_size*image_size + image_size))*0.0028312632,PySRFunction(X=>image_size*(batch_size + image_size - (-0.028787112*batch_size*image_size + image_size))*0.0028312632)

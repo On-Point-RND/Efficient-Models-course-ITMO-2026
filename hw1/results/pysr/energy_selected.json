@@ -1,0 +1,26 @@
+{
+  "target": "energy_j",
+  "unit": "mJ",
+  "features": [
+    "image_size",
+    "batch_size"
+  ],
+  "feature_columns": [
+    "S",
+    "B"
+  ],
+  "equation": "batch_size*image_size*(batch_size*0.15323526 + image_size)*0.00048781637 - image_size",
+  "latex": "batch_{size} image_{size} \\left(batch_{size} 0.153 + image_{size}\\right) 0.000488 - image_{size}",
+  "train_count": 63,
+  "validation_count": 69,
+  "train": {
+    "mae": 262.04150413667094,
+    "median_relative_error": 0.8377306335751796,
+    "invalid_predictions": 0
+  },
+  "validation": {
+    "mae": 392.4941296262357,
+    "median_relative_error": 0.1319864492656399,
+    "invalid_predictions": 0
+  }
+}

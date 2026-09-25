@@ -1,0 +1,26 @@
+{
+  "target": "latency_s",
+  "unit": "ms",
+  "features": [
+    "image_size",
+    "batch_size"
+  ],
+  "feature_columns": [
+    "S",
+    "B"
+  ],
+  "equation": "(-image_size*(-batch_size*image_size + image_size)/(-359.71133) + image_size)/(-359.26807)",
+  "latex": "\\frac{- \\frac{image_{size} \\left(- batch_{size} image_{size} + image_{size}\\right)}{-360.} + image_{size}}{-359.}",
+  "train_count": 63,
+  "validation_count": 69,
+  "train": {
+    "mae": 3.392774538681139,
+    "median_relative_error": 0.42915913791272225,
+    "invalid_predictions": 0
+  },
+  "validation": {
+    "mae": 7.560504964348823,
+    "median_relative_error": 0.19426359229258855,
+    "invalid_predictions": 0
+  }
+}
